@@ -44,7 +44,7 @@ const AuthLogin = ({ title, subtitle, subtext }: loginType) => {
               />
             )}
           >
-            Sign-in error: Username or Password is Wrong
+            Error de inicio de sesión: Usuario o Contraseña incorrectos
           </Alert>
         </div>
       ) : (
@@ -54,7 +54,7 @@ const AuthLogin = ({ title, subtitle, subtext }: loginType) => {
       <form onSubmit={handleSubmit} className="mt-6">
         <div className="mb-4">
           <div className="mb-2 block">
-            <Label htmlFor="Username" value="Username" />
+            <Label htmlFor="Username" value="Usuario" />
           </div>
           <TextInput
             id="Username"
@@ -67,7 +67,7 @@ const AuthLogin = ({ title, subtitle, subtext }: loginType) => {
         </div>
         <div className="mb-4">
           <div className="mb-2 block">
-            <Label htmlFor="password" value="Password" />
+            <Label htmlFor="password" value="Contraseña" />
           </div>
           <TextInput
             id="password"
@@ -85,15 +85,15 @@ const AuthLogin = ({ title, subtitle, subtext }: loginType) => {
               htmlFor="accept"
               className="opacity-90 font-normal cursor-pointer"
             >
-              Remeber this Device
+              Recordar este dispositivo
             </Label>
           </div>
           <Link href={"/"} className="text-primary text-sm font-medium">
-            Forgot Password ?
+            ¿Olvidaste tu contraseña?
           </Link>
         </div>
         <Button color={"primary"} type="submit" className=" w-full">
-          Sign in
+          Iniciar Sesión
         </Button>
       </form>
 
